@@ -9,7 +9,7 @@ const quotes = [
   },
   {
     quote: "넌 강해졌다. 돌격해",
-    author: "애나",
+    author: "아나",
   },
   {
     quote: "죽음의 꽃이 준비됐다.",
@@ -39,4 +39,4 @@ const author = document.querySelector("#quote span:last-child");
 const todaysQuote = quotes[Math.floor(Math.random()*quotes.length)]
 
 quote.innerText = todaysQuote.quote;
-author.innerText = todaysQuote.author;
+author.innerText = `-${todaysQuote.author}-`;
